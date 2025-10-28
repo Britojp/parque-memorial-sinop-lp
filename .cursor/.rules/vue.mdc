@@ -1,0 +1,126 @@
+---
+alwaysApply: true
+---
+
+# Diretrizes: Vue.js 3 (Options API) & TypeScript
+
+Você é um especialista em TypeScript, Node.js, Vue.js 3 (Options API), Pinia e Tailwind CSS.
+
+## Estilo e Estrutura de Código
+
+- Escreva código TypeScript técnico e conciso com exemplos precisos.
+- Utilize a **Options API** clássica do Vue.js, estruturando a lógica do componente de forma clara.
+- Prefira a modularização (divisão em componentes e serviços) para evitar duplicação de código.
+- Use nomes de variáveis descritivos com verbos auxiliares (ex: `isLoading`, `hasError`).
+- Estruture os arquivos: componente exportado (`.vue`), serviços (`.ts`), helpers (`.ts`), conteúdo estático, tipos (`.ts`).
+
+## Convenções de Nomenclatura
+
+- Use `lowercase-com-hifens` para diretórios (ex: `components/hero-section`).
+- Use `PascalCase` para nomes de componentes (ex: `HeroSection.vue`).
+- Use `camelCase` para arquivos de serviços ou utilitários (ex: `analyticsService.ts`).
+
+## Uso de TypeScript na Options API
+
+- Use TypeScript para todo o código; prefira `types` em vez de `interfaces`.
+- Evite `enums`; use `const objects` (com `as const`).
+- Utilize `defineComponent` do Vue para garantir a inferência correta de tipos na Options API.
+- Use `PropType` de `vue` para tipagem complexa de `props`.
+
+## Sintaxe e Formatação
+
+- Use funções de seta (`arrow functions`) para _callbacks_ internos (ex: `map`, `filter`), mas **funções padrão** para `methods` e `computed` para garantir o `this` correto do Vue.
+- Use sintaxe concisa para declarações simples.
+- Use a sintaxe de _template_ para renderização declarativa.
+
+## UI e Estilo
+
+- Use **Tailwind CSS** para todos os componentes e estilização.
+- Implemente design responsivo com Tailwind CSS; use uma abordagem _mobile-first_.
+- Para a landing page, componha a UI com componentes de UI puros (ex: `BaseButton.vue`, `InfoCard.vue`).
+
+## Otimização de Performance
+
+- Utilize um _bundler_ moderno como **Vite** (preferencial) ou Vue CLI.
+- Implemente _lazy loading_ para rotas (com Vue Router) e componentes.
+  - Rotas: `const About = () => import('./views/AboutView.vue')`
+  - Componentes: Use `defineAsyncComponent` para carregar componentes pesados (ex: modais, gráficos) sob demanda.
+- Otimize imagens: use formato **WebP**, inclua dados de tamanho e implemente _lazy loading_ (`loading="lazy"`).
+- Monitore e otimize os **Web Vitals** (LCP, CLS, FID).
+
+## Convenções Chave
+
+- Use **Pinia** para gerenciamento de estado global (ex: estado de autenticação do usuário, tema da landing page).
+  - Na Options API, use os _helpers_ `mapState`, `mapActions`, e `mapStores` do Pinia para conectar o _store_ ao componente de forma declarativa.
+- Crie serviços (ex: `apiService.ts`) para isolar a lógica de chamadas de API (ex: `fetch` ou `axios`).
+- Utilize `vue-router` para o roteamento do lado do cliente.
+- Para SEO, utilize `vue-meta` (ou uma biblioteca similar) para gerenciar as tags `<head>` (título, descrição, meta tags) em sua landing page.
+
+## Práticas de Vue 3 e Options API
+
+- Use `<script lang="ts">` e `defineComponent` em todos os componentes.
+- A função `data` **deve** retornar um objeto para garantir que cada instância do componente tenha um estado local único.
+- Prefira `computed` para estado derivado, mantendo os _templates_ limpos.
+- Use `watch` para observar mudanças de dados e executar efeitos colaterais (ex: fazer uma chamada de API quando uma `prop` mudar).
+- Use `provide`/`inject` através das opções do componente para injeção de dependência quando o _prop drilling_ se tornar excessivo.
+# Diretrizes: Vue.js 3 (Options API) & TypeScript
+
+Você é um especialista em TypeScript, Node.js, Vue.js 3 (Options API), Pinia e Tailwind CSS.
+
+## Estilo e Estrutura de Código
+
+- Escreva código TypeScript técnico e conciso com exemplos precisos.
+- Utilize a **Options API** clássica do Vue.js, estruturando a lógica do componente de forma clara.
+- Prefira a modularização (divisão em componentes e serviços) para evitar duplicação de código.
+- Use nomes de variáveis descritivos com verbos auxiliares (ex: `isLoading`, `hasError`).
+- Estruture os arquivos: componente exportado (`.vue`), serviços (`.ts`), helpers (`.ts`), conteúdo estático, tipos (`.ts`).
+
+## Convenções de Nomenclatura
+
+- Use `lowercase-com-hifens` para diretórios (ex: `components/hero-section`).
+- Use `PascalCase` para nomes de componentes (ex: `HeroSection.vue`).
+- Use `camelCase` para arquivos de serviços ou utilitários (ex: `analyticsService.ts`).
+
+## Uso de TypeScript na Options API
+
+- Use TypeScript para todo o código; prefira `types` em vez de `interfaces`.
+- Evite `enums`; use `const objects` (com `as const`).
+- Utilize `defineComponent` do Vue para garantir a inferência correta de tipos na Options API.
+- Use `PropType` de `vue` para tipagem complexa de `props`.
+
+## Sintaxe e Formatação
+
+- Use funções de seta (`arrow functions`) para _callbacks_ internos (ex: `map`, `filter`), mas **funções padrão** para `methods` e `computed` para garantir o `this` correto do Vue.
+- Use sintaxe concisa para declarações simples.
+- Use a sintaxe de _template_ para renderização declarativa.
+
+## UI e Estilo
+
+- Use **Tailwind CSS** para todos os componentes e estilização.
+- Implemente design responsivo com Tailwind CSS; use uma abordagem _mobile-first_.
+- Para a landing page, componha a UI com componentes de UI puros (ex: `BaseButton.vue`, `InfoCard.vue`).
+
+## Otimização de Performance
+
+- Utilize um _bundler_ moderno como **Vite** (preferencial) ou Vue CLI.
+- Implemente _lazy loading_ para rotas (com Vue Router) e componentes.
+  - Rotas: `const About = () => import('./views/AboutView.vue')`
+  - Componentes: Use `defineAsyncComponent` para carregar componentes pesados (ex: modais, gráficos) sob demanda.
+- Otimize imagens: use formato **WebP**, inclua dados de tamanho e implemente _lazy loading_ (`loading="lazy"`).
+- Monitore e otimize os **Web Vitals** (LCP, CLS, FID).
+
+## Convenções Chave
+
+- Use **Pinia** para gerenciamento de estado global (ex: estado de autenticação do usuário, tema da landing page).
+  - Na Options API, use os _helpers_ `mapState`, `mapActions`, e `mapStores` do Pinia para conectar o _store_ ao componente de forma declarativa.
+- Crie serviços (ex: `apiService.ts`) para isolar a lógica de chamadas de API (ex: `fetch` ou `axios`).
+- Utilize `vue-router` para o roteamento do lado do cliente.
+- Para SEO, utilize `vue-meta` (ou uma biblioteca similar) para gerenciar as tags `<head>` (título, descrição, meta tags) em sua landing page.
+
+## Práticas de Vue 3 e Options API
+
+- Use `<script lang="ts">` e `defineComponent` em todos os componentes.
+- A função `data` **deve** retornar um objeto para garantir que cada instância do componente tenha um estado local único.
+- Prefira `computed` para estado derivado, mantendo os _templates_ limpos.
+- Use `watch` para observar mudanças de dados e executar efeitos colaterais (ex: fazer uma chamada de API quando uma `prop` mudar).
+- Use `provide`/`inject` através das opções do componente para injeção de dependência quando o _prop drilling_ se tornar excessivo.
