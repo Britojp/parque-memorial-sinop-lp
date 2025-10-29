@@ -10,6 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/parquememorial-lp/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
