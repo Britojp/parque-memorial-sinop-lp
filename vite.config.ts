@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/parquememorial-lp/',
+  base: '/parque-memorial-sinop-lp/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
