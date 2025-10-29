@@ -3,7 +3,9 @@
     <TopBar />
     <HeaderNav />
     <HeroSection />
-    <FooterBar />
+    <PlanningCTA />
+    <FaqSection />
+    <LocationSection />
   </div>
 </template>
 
@@ -13,7 +15,11 @@ import HeaderNav from '../components/HeaderNav.vue'
 import TopBar from '../components/TopBar.vue'
 import HeroSection from '../components/HeroSection.vue'
 import PlanningCTA from '../components/PlanningCTA.vue'
+import CtaBanner from '../components/CtaBanner.vue'
+import FaqSection from '../components/FaqSection.vue'
+import LocationSection from '../components/LocationSection.vue'
 import FooterBar from '../components/FooterBar.vue'
+import LogosVideo from '../components/LogosVideo.vue'
 
 export default defineComponent({
   name: 'LandingPage',
@@ -21,7 +27,11 @@ export default defineComponent({
     HeaderNav,
     TopBar,
     HeroSection,
+    CtaBanner,
     PlanningCTA,
+    FaqSection,
+    LocationSection,
+    LogosVideo,
     FooterBar,
   },
 })

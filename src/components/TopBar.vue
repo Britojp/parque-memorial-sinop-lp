@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand text-white">
+  <div class="bg-topbar text-white">
     <div
       class="mx-auto max-w-[var(--container-width)] px-4 py-2 flex items-center justify-center gap-4"
     >
