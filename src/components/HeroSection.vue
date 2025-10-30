@@ -12,10 +12,10 @@
     >
       <div class="max-w-xl animate-fadeUp">
         <h1 class="mt-4 font-heading text-3xl font-semibold leading-tight text-white md:text-5xl">
-          Cemitério Parque Memorial de Sinop
+          A vida é feita de cuidados
         </h1>
         <p class="mt-4 text-sm text-white/85 md:text-lg">
-Uma nova abordagem para espaços de memória e respeito
+          Um espaço onde natureza, arte e tecnologia se unem para ressignificar a despedida e eternizar histórias
         </p>
         <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
           <a

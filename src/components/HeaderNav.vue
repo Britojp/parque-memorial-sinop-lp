@@ -28,7 +28,7 @@
             </svg>
           </div>
           <div class="leading-tight">
-            <div class="text-[11px] font-semibold text-ink md:text-xs">Central 24h</div>
+            <div class="text-[11px] font-semibold text-ink md:text-xs">Central de atendimento</div>
             <a href="tel:+556692165440" class="text-xs font-semibold text-brand md:text-sm"
               >(66) 9216-5440</a
             >

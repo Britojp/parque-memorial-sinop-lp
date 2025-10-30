@@ -17,7 +17,7 @@
         </div>
         <div class="md:pl-4">
           <h2 class="mt-4 font-heading text-2xl font-semibold text-ink md:text-3xl">
-            Planejamento imediato com acolhimento completo
+            Cuidando de você, hoje e por toda a eternidade
           </h2>
           <p class="mt-4 text-sm text-ink/80 md:text-base">
             O Parque Memorial de Sinop nasce com o propósito de transformar a experiência de

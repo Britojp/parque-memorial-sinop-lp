@@ -40,7 +40,7 @@ export default defineComponent({
   name: 'TopBar',
   data() {
     return {
-      messages: ['Siga-nos nas redes sociais!', 'Atendimento 24h - (66) 9216-5440'],
+      messages: ['Siga-nos nas redes sociais!', 'Central de Atendimento - (66) 9216-5440'],
       messageIndex: 0 as number,
       intervalId: null as number | null,
     }

@@ -116,9 +116,8 @@ export default defineComponent({
       diffItems: [
         { title: 'Planejado' },
         { title: 'Humanizado' },
-        { title: 'Acessível com normas de acessibilidade' },
-        { title: 'Complexo completo' },
-        { title: 'Evita cortejos' },
+        { title: 'Acessibilidade em cada detalhe' },
+        { title: 'Estrutura completa' },
         { title: 'Investimento seguro' },
         { title: 'Evolução contínua' },
       ],

@@ -99,7 +99,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'LocationSection',
   data() {
-    const placeName = 'Futuro – Cemitério Parque Memorial Sinop'
+    const placeName = 'Parque Memorial de Sinop - Rodovia MT140 km 7 - Sinop - MT'
     const address = 'Rod. Emanuel Pinheiro, km 2 · Sinop - MT'
     const features = [
       {
