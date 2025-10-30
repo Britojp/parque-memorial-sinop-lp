@@ -3,17 +3,11 @@
     <TopBar />
     <HeaderNav />
     <HeroSection />
-    <RepeatedImageBanner />
     <PlanningCTA />
+    <RepeatedImageBanner />
     <ContactForm />
     <FaqSection />
     <LocationSection />
-    <RepeatedImageBanner
-      title="Ambiente planejado para acolher a despedida da sua família"
-      subtitle="Cerimônias personalizadas, salas climatizadas e suporte especializado garantem serenidade em cada detalhe."
-      cta-label="Quero conhecer a estrutura"
-      cta-href="#contato"
-    />
   </div>
 </template>
 
