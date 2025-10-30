@@ -7,7 +7,7 @@
     class="fixed bottom-5 right-5 z-50"
   >
     <span
-      class="inline-flex items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg w-14 h-14 hover:scale-105 active:scale-95 transition-transform duration-150 focus-ring-brand wabounce"
+      class="inline-flex items-center justify-center rounded-xl bg-[#25D366] text-white shadow-lg w-14 h-14 hover:scale-105 active:scale-95 transition-transform duration-150 focus-ring-brand wabounce"
     >
       <svg
         width="28"

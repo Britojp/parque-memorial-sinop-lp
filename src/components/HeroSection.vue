@@ -7,27 +7,25 @@
         :style="{ transform: overlayTransform, willChange: 'transform' }"
       ></div>
     </div>
-    <div class="relative mx-auto max-w-[var(--container-width)] px-4 py-20 md:py-28">
-      <div class="max-w-3xl">
-        <h1 class="font-heading text-4xl md:text-6xl font-semibold leading-tight animate-fadeUp">
-          Cuidado, respeito e acolhimento em cada detalhe
+    <div class="relative mx-auto max-w-[var(--container-width)] px-4 pt-16 pb-20 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] md:items-center md:gap-12 md:pt-20 md:pb-28">
+      <div class="max-w-xl animate-fadeUp">
+        <h1 class="mt-4 font-heading text-3xl font-semibold leading-tight text-white md:text-5xl">
+          Plano funerário que acolhe sua família a qualquer hora
         </h1>
-        <p class="mt-4 text-white/90 text-base md:text-lg animate-fadeUp delay-150">
-          Atendimento 24 horas para amparar sua família nos momentos mais delicados.
+        <p class="mt-4 text-sm text-white/85 md:text-lg">
+          Receba orientação humana e estrutura completa sem burocracia. Nossa equipe acompanha cada etapa para que você tenha tranquilidade em minutos.
         </p>
-        <div class="mt-8 flex flex-wrap gap-3 animate-fadeUp delay-300">
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
           <a
             href="#contato"
-            class="px-5 py-3 bg-white text-ink text-sm md:text-base hover:bg-brand-600 hover:text-white focus-ring-brand"
-            >Falar com um consultor</a
+            class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-2xl transition hover:bg-brand-600 focus-ring-brand md:text-base"
           >
-          <a
-            href="#canal"
-            class="px-5 py-3 border border-white/40 text-white text-sm md:text-base hover:bg-white hover:text-ink focus-ring-brand"
-            >Conheça nossa estrutura</a
-          >
+            Quero falar com um consultor
+          </a>
+      
         </div>
       </div>
+    
     </div>
     <div
       class="absolute inset-x-0 bottom-6 flex flex-col items-center gap-1 pointer-events-none select-none"
