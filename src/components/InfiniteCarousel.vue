@@ -101,7 +101,10 @@ export default defineComponent({
 
 @media (max-width: 640px) {
   .carouselTrack {
-    animation-duration: calc(var(--duration) * 0.6);
+    animation-duration: calc(var(--duration) * 0.35);
+  }
+  .carouselImage {
+    height: calc(var(--height) * 0.75);
   }
 }
 </style>

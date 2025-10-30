@@ -30,11 +30,6 @@
           </div>
         </div>
         <div class="space-y-5 md:pl-6">
-          <span
-            class="inline-flex items-center gap-2 rounded-lg bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand"
-          >
-            Visite nossa estrutura
-          </span>
           <h2 class="font-heading text-2xl font-semibold text-ink md:text-3xl">
             Estrutura completa em localização estratégica
           </h2>

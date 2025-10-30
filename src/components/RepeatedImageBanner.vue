@@ -71,7 +71,7 @@ export default defineComponent({
     containerStyle(): Record<string, string> {
       const clampOverlay = Math.max(0, Math.min(1, this.overlayOpacity))
       const startAlpha = Math.min(1, clampOverlay + 0.25)
-      const gradientLayer = `linear-gradient(90deg, rgba(29, 108, 93, ${startAlpha}) 0%, rgba(29, 108, 93, ${clampOverlay}) 100%)`
+      const gradientLayer = `linear-gradient(0deg, rgba(0, 0, 0, ${clampOverlay}) 0%, rgba(0, 0, 0, ${clampOverlay}) 100%)`
       const layers = [gradientLayer, `url(${this.src})`]
       return {
         backgroundImage: layers.join(', '),

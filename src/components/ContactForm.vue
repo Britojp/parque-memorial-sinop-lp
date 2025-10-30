@@ -4,11 +4,11 @@
       <div class="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-center">
         <div class="space-y-4">
           <h2 class="font-heading text-2xl font-semibold text-ink md:text-3xl">
-            Fale Agora com o Consultor para Receber Mais Informações
+            Fale agora com o consultor para receber mais informações
           </h2>
           <p class="text-sm text-ink/80 md:text-base">
-            Conheça nossa estrutura: um ambiente acolhedor, acessível e humanizado, pensado para receber sua
-            família com respeito.
+            Conheça nossa estrutura: um ambiente acolhedor, acessível e humanizado, pensado para
+            receber sua família com respeito.
           </p>
           <ul class="space-y-3 text-sm text-ink/70">
             <li v-for="(item, idx) in diffItems" :key="idx" class="flex items-start gap-3">
@@ -116,7 +116,7 @@ export default defineComponent({
       diffItems: [
         { title: 'Planejado' },
         { title: 'Humanizado' },
-        { title: 'Acessível — normas' },
+        { title: 'Acessível com normas de acessibilidade' },
         { title: 'Complexo completo' },
         { title: 'Evita cortejos' },
         { title: 'Investimento seguro' },

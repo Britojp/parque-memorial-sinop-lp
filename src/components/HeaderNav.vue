@@ -34,12 +34,6 @@
             >
           </div>
         </div>
-        <a
-          href="#contato"
-          class="hidden items-center justify-center rounded-xl bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg transition hover:bg-brand-600 focus-ring-brand md:inline-flex"
-        >
-          Quero falar com um consultor
-        </a>
       </div>
     </div>
   </header>

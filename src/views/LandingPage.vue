@@ -17,7 +17,6 @@ import { defineComponent } from 'vue'
 import HeaderNav from '../components/HeaderNav.vue'
 import TopBar from '../components/TopBar.vue'
 import HeroSection from '../components/HeroSection.vue'
-import UrgencyBanner from '../components/UrgencyBanner.vue'
 import PlanningCTA from '../components/PlanningCTA.vue'
 import ContactForm from '../components/ContactForm.vue'
 import LocationSection from '../components/LocationSection.vue'
@@ -33,7 +32,6 @@ export default defineComponent({
     InfiniteCarousel,
     RepeatedImageBanner,
     HeroSection,
-    UrgencyBanner,
     PlanningCTA,
     ContactForm,
     LocationSection,
