@@ -3,10 +3,9 @@
     <div class="absolute inset-0">
       <div class="repeated-image-layer" :style="containerStyle"></div>
     </div>
-    <div class="relative mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 py-14 text-center text-white sm:py-20">
-      <p v-if="badgeLabel" class="text-[11px] uppercase tracking-[0.45em] text-white/70">
-        {{ badgeLabel }}
-      </p>
+    <div
+      class="relative mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 py-14 text-center text-white sm:py-20"
+    >
       <h2 v-if="title" class="text-2xl font-semibold leading-tight text-white sm:text-[32px]">
         {{ title }}
       </h2>
@@ -14,9 +13,6 @@
         {{ subtitle }}
       </p>
       <div class="flex flex-col items-center gap-3 sm:flex-row">
-        <p v-if="featureHighlight" class="text-xs uppercase tracking-[0.28em] text-white/85">
-          {{ featureHighlight }}
-        </p>
         <a
           v-if="ctaLabel && ctaHref"
           :href="ctaHref"
@@ -51,7 +47,7 @@ export default defineComponent({
     },
     overlayOpacity: {
       type: Number,
-      default: 0.45,
+      default: 0.6,
     },
     title: {
       type: String,
@@ -60,7 +56,7 @@ export default defineComponent({
     subtitle: {
       type: String,
       default:
-        'Salas climatizadas, capela ecumênica e equipe humanizada garantem um ambiente sereno para a despedida.',
+        'Nosso objetivo é unir respeito, sustentabilidade e conforto em um ambiente que valoriza a vida e a história de cada família.',
     },
     ctaLabel: {
       type: String as PropType<string | null>,
@@ -75,7 +71,7 @@ export default defineComponent({
     containerStyle(): Record<string, string> {
       const clampOverlay = Math.max(0, Math.min(1, this.overlayOpacity))
       const startAlpha = Math.min(1, clampOverlay + 0.25)
-      const gradientLayer = `linear-gradient(90deg, rgba(9, 26, 44, ${startAlpha}), rgba(9, 26, 44, ${clampOverlay}), rgba(9, 26, 44, 0))`
+      const gradientLayer = `linear-gradient(90deg, rgba(29, 108, 93, ${startAlpha}) 0%, rgba(29, 108, 93, ${clampOverlay}) 100%)`
       const layers = [gradientLayer, `url(${this.src})`]
       return {
         backgroundImage: layers.join(', '),

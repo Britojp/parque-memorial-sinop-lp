@@ -1,4 +1,4 @@
-  <template>
+<template>
   <section id="hero" class="relative overflow-hidden text-white">
     <div class="absolute inset-0" :style="{ transform: bgTransform, willChange: 'transform' }">
       <img :src="bgImage" class="w-full h-full object-cover hero-kenburns" />
@@ -7,13 +7,15 @@
         :style="{ transform: overlayTransform, willChange: 'transform' }"
       ></div>
     </div>
-    <div class="relative mx-auto max-w-[var(--container-width)] px-4 pt-16 pb-20 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] md:items-center md:gap-12 md:pt-20 md:pb-28">
+    <div
+      class="relative mx-auto max-w-[var(--container-width)] px-4 pt-16 pb-20 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] md:items-center md:gap-12 md:pt-20 md:pb-28"
+    >
       <div class="max-w-xl animate-fadeUp">
         <h1 class="mt-4 font-heading text-3xl font-semibold leading-tight text-white md:text-5xl">
-          Plano funerário que acolhe sua família a qualquer hora
+          Cemitério Parque Memorial de Sinop
         </h1>
         <p class="mt-4 text-sm text-white/85 md:text-lg">
-          Receba orientação humana e estrutura completa sem burocracia. Nossa equipe acompanha cada etapa para que você tenha tranquilidade em minutos.
+Uma nova abordagem para espaços de memória e respeito
         </p>
         <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
           <a
@@ -22,10 +24,8 @@
           >
             Quero falar com um consultor
           </a>
-      
         </div>
       </div>
-    
     </div>
     <div
       class="absolute inset-x-0 bottom-6 flex flex-col items-center gap-1 pointer-events-none select-none"

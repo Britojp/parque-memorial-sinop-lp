@@ -2,28 +2,44 @@
   <section class="bg-paper">
     <div class="mx-auto max-w-[var(--container-width)] px-4 py-12 md:py-16">
       <div class="grid items-stretch gap-10 md:grid-cols-[1.1fr_0.9fr]">
-        <div class="relative h-[280px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-ink/10 md:h-[360px]">
+        <div
+          class="relative h-[280px] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-ink/10 md:h-[360px]"
+        >
           <iframe
-            :src="mapEmbedUrl"
+            :src="tourUrl"
             class="h-full w-full"
             style="border: 0"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen
           ></iframe>
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent"></div>
+          <div
+            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent"
+          ></div>
+          <div v-if="!tourInteractive" class="absolute inset-0 flex items-end p-4 bg-black/10">
+            <div class="max-w-[80%] rounded-xl bg-ink/60 p-4 text-white backdrop-blur-sm">
+              <p class="text-xs sm:text-sm">Faça um tour virtual pela nossa estrutura.</p>
+              <button
+                type="button"
+                @click="enableTour"
+                class="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-brand-600 focus-ring-brand"
+              >
+                <span>Ativar tour 360º</span>
+              </button>
+            </div>
+          </div>
         </div>
         <div class="space-y-5 md:pl-6">
-          <span class="inline-flex items-center gap-2 rounded-lg bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand">
+          <span
+            class="inline-flex items-center gap-2 rounded-lg bg-brand/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand"
+          >
             Visite nossa estrutura
           </span>
           <h2 class="font-heading text-2xl font-semibold text-ink md:text-3xl">
             Estrutura completa em localização estratégica
           </h2>
-          <p class="text-sm text-ink/75 md:text-base">
-            {{ placeName }} · {{ address }}
-          </p>
-         <!-- <ul class="grid gap-4 sm:grid-cols-2">
+          <p class="text-sm text-ink/75 md:text-base">{{ placeName }} · {{ address }}</p>
+          <!-- <ul class="grid gap-4 sm:grid-cols-2">
             <li
               v-for="feature in features"
               :key="feature.title"
@@ -50,8 +66,20 @@
               rel="noopener"
               class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg transition hover:bg-brand-600 focus-ring-brand"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 3l9 9-9 9-9-9 9-9zm0 0l9 9m-9-9L3 12m9-9v18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 3l9 9-9 9-9-9 9-9zm0 0l9 9m-9-9L3 12m9-9v18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
               <span>Quero visitar agora</span>
             </a>
@@ -108,7 +136,14 @@ export default defineComponent({
       mapsUrl: mapsPlaceUrl,
       directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${query}`,
       mapEmbedUrl: `https://www.google.com/maps?q=${query}&output=embed`,
+      tourUrl: 'https://seuproduto360.com/p/paulo28/027/',
+      tourInteractive: false as boolean,
     }
+  },
+  methods: {
+    enableTour() {
+      this.tourInteractive = true
+    },
   },
 })
 </script>

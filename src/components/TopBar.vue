@@ -23,7 +23,12 @@
           </svg>
           <span>Facebook</span>
         </a>
-        <a href="#" class="inline-flex items-center gap-2 opacity-90 hover:opacity-100">
+        <a
+          href="https://www.instagram.com/parquememorialdesinop/"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 opacity-90 hover:opacity-100"
+        >
           <svg
             width="16"
             height="16"
@@ -49,7 +54,7 @@ export default defineComponent({
   name: 'TopBar',
   data() {
     return {
-      messages: ['Siga-nos nas redes sociais!', 'Atendimento 24h - (XX) XXXXX-XXX'],
+      messages: ['Siga-nos nas redes sociais!', 'Atendimento 24h - (66) 9216-5440'],
       messageIndex: 0 as number,
       intervalId: null as number | null,
     }

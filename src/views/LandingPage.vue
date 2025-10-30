@@ -6,8 +6,9 @@
     <PlanningCTA />
     <RepeatedImageBanner />
     <ContactForm />
-    <FaqSection />
+    <InfiniteCarousel />
     <LocationSection />
+    <FooterBar />
   </div>
 </template>
 
@@ -19,22 +20,24 @@ import HeroSection from '../components/HeroSection.vue'
 import UrgencyBanner from '../components/UrgencyBanner.vue'
 import PlanningCTA from '../components/PlanningCTA.vue'
 import ContactForm from '../components/ContactForm.vue'
-import FaqSection from '../components/FaqSection.vue'
 import LocationSection from '../components/LocationSection.vue'
 import RepeatedImageBanner from '../components/RepeatedImageBanner.vue'
+import InfiniteCarousel from '@/components/InfiniteCarousel.vue'
+import FooterBar from '@/components/FooterBar.vue'
 
 export default defineComponent({
   name: 'LandingPage',
   components: {
     HeaderNav,
     TopBar,
+    InfiniteCarousel,
     RepeatedImageBanner,
     HeroSection,
     UrgencyBanner,
     PlanningCTA,
     ContactForm,
-    FaqSection,
     LocationSection,
+    FooterBar,
   },
 })
 </script>

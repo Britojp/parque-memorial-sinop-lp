@@ -33,7 +33,7 @@ import { defineComponent, computed } from 'vue'
 export default defineComponent({
   name: 'WhatsAppButton',
   props: {
-    phone: { type: String, default: '5511999999999' },
+    phone: { type: String, default: '556692165440' },
     message: { type: String, default: 'Olá! Gostaria de saber mais.' },
   },
   setup(props) {
